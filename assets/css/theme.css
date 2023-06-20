@@ -1,11 +1,16 @@
 :root {
-    --primary-color: #E9B1B1;
-    --color-blue-1: #1077D6;
-    --color-blue-2: #BDDCED;
+    --primary-color: #126DA6;
+    --secondary-color: #A65233;
+    --color-blue-1: #2A95BF;
+    --color-blue-2: #0BB3D9;
+    --color-blue-3: #55C1D9;
     --color-white: #FFFFFF;
     --color-black: #000000;
-    --color-text: #062C42; 
-    --color-btn: #CD3C5F;
+    --color-text: #333333; 
+    --color-info: #033E8C;
+    --color-success: #5CB85C;
+    --color-warning: #FFCC00;
+    --color-danger: #CC3300;  
 
     --box-shadow: 10px 10px 30px rgba(51, 51, 51, 0.05);
 }
@@ -18,6 +23,7 @@ html {
     font-family: var(--font-family);
     font-size: 16px;
     line-height: 1.5;
+    color: var(--color-text);
     background-color: var(--white-color);
 }
 
@@ -90,7 +96,7 @@ img {
     font-weight: bold;
     font-size: 1.6em;
     line-height: 44px;
-    color: var(--color-black);
+    color: var(--primary-color);
 }
 
 .block-title .line {
@@ -176,11 +182,42 @@ textarea:focus {
 }
 
 .box-shadow {
-    box-shadow: 10px 10px var(--white-color);
+    box-shadow: 0px 10px 30px 0px rgb(0 0 0 / 10%);
 }
 
 .box-shadow.primary {
     box-shadow: 10px 10px var(--primary-color);
+}
+
+.section {
+    padding: 50px 0;
+}
+
+.section-bg-primary {
+    background-color: var(--primary-color);
+}
+
+.card {
+    background-color: var(--color-white);
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.text-max-line {
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.text-line-2 {
+    -webkit-line-clamp: 2;
+    max-height: 48px;
+}
+
+.text-line-3 {
+    -webkit-line-clamp: 3;
 }
 
 @-webkit-keyframes fadeInTop {
