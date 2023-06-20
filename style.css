@@ -6,3 +6,365 @@
 | About author: https://thelight.vn/
 |
 */
+
+/* TOP BAR */
+.top-bar {
+    background: var(--primary-color);
+    color: var(--color-white);
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.top-bar-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-bar-right .list-social {
+    display: flex;
+    align-items: center;
+}
+
+.top-bar-right .list-social .list-item {
+    margin-right: 16px;
+}
+
+.top-bar-right .list-social .list-item:last-child {
+    margin-right: 0;
+}
+
+.top-bar a:hover {
+    color: var(--color-blue-1);
+}
+/* END TOP BAR */
+
+/* HEADER */
+.header {
+    display: flex;
+    align-items: center;
+    height: 90px;
+}
+
+.header .header-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .logo {
+    width: 80px;
+    height: 80px;
+}
+
+.header .logo img {
+    height: 100%;
+}
+
+.header .menu .list-menu {
+    display: flex;
+    align-items: center;
+}
+
+.header .menu .list-menu .menu-item {
+    margin-right: 16px;
+}
+
+.header .menu .list-menu .menu-item:last-child {
+    margin: 0;
+}
+
+.header .list-menu .menu-item.active a {
+    color: var(--primary-color);
+}
+
+.header .list-menu .menu-item a {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.header .list-menu > .menu-item > a:hover {
+    color: var(--primary-color);
+}
+/* END HEADER */
+
+/* HOME BANNER */
+.home-banner .slider-item .img-wrap {
+    padding-top: 35.25%;
+}
+
+.slider-home-banner:hover .slick-prev,
+.slider-home-banner:hover .slick-next {
+    opacity: 1;
+    visibility: visible;
+}
+
+.slider-home-banner .slick-prev,
+.slider-home-banner .slick-next {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider-home-banner .slick-prev:hover,
+.slider-home-banner .slick-next:hover {
+    background-color: var(--primary-color);
+}
+
+.slider-home-banner .slick-prev {
+    left: 50px;
+}
+
+.slider-home-banner .slick-next {
+    right: 50px;
+}
+/* END HOME BANNER */
+
+/* ABOUT US HOME */
+.about-us-home .img-wrap {
+    padding-top: 66.25%;
+}
+
+.about-us-home .img-wrap img {
+    border-radius: 10px;
+}
+
+.about-us-home .about-us-item {
+    display: flex;
+    align-items: center;
+}
+
+.about-us-home .content .title {
+    font-size: 2em;
+    color: var(--primary-color);
+    margin-bottom: 24px;
+}
+
+.about-us-home .content .description {
+    margin-bottom: 16px;
+}
+
+.about-us-home .content .see-more {
+    color: var(--secondary-color);
+    font-size: 1.2em;
+}
+
+.about-us-home .content .see-more span {
+    position: relative;
+    right: 0;
+    transition: all .2s ease;
+}
+
+.about-us-home .content .see-more:hover {
+    color: var(--primary-color);
+}
+
+.about-us-home .content .see-more:hover span {
+    right: -5px;
+}
+/* END ABOUT US HOME */
+
+/* SLIDER SERVICE */
+.service-area .block-title .title {
+    color: var(--color-white);
+}
+
+.service-area .item-service {
+    transform: scale(0.85);
+    transition: .5s;
+}
+
+.service-area .item-service.slick-current {
+    transform: scale(1);
+}
+
+.service-area .item-service:hover .title {
+    color: var(--primary-color);
+}
+
+.service-area .item-service .card {
+    text-align: center;
+}
+
+.service-area .item-service img {
+    height: 200px;
+    object-fit: contain;
+}
+
+.service-area .item-service .title {
+    font-size: 0.875em;
+    margin-top: 8px;
+}
+/* END SLIDER SERVICE */
+
+/* WCU */
+.section-wcu .block-title .title {
+    color: var(--color-white);
+}
+
+.section-wcu .item-wcu:hover .card {
+    background-color: var(--color-info);
+    color: var(--color-white);
+}
+/* END WCU */
+
+/* Partner */
+.list-partner {
+    justify-content: center;
+    align-items: center;
+}
+
+.list-partner .item-partner .inner {
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.list-partner .item-partner .card:hover img {
+    transform: scale(1.1);
+}
+
+.list-partner .item-partner .image {
+    height: 100px;
+}
+
+.list-partner .item-partner .image img {
+    object-fit: contain;
+    height: 100%;
+}
+/* End Partner */
+
+/* Slider Blog */
+.slider-blog .block-title .title {
+    color: var(--color-white);
+}
+
+.slider-blog .item-blog:hover img {
+    transform: scale(1.1);
+}
+
+.slider-blog .item-blog:hover a {
+    color: var(--secondary-color);
+}
+
+.slider-blog .item-blog .img-wrap {
+    padding-top: 76.25%;
+}
+
+.slider-blog .item-blog img {
+    border-radius: 10px;
+}
+
+.slider-blog .item-blog .blog-content {
+    margin-top: 30px;
+}
+
+.slider-blog .item-blog .blog-content .title {
+    font-size: 1.2rem;
+    line-height: 24px;
+}
+
+.slider-blog .item-blog .blog-content .description {
+    margin-top: 12px;
+}
+/* End Slider Blog */
+
+/* Footer */
+.footer .footer-widget .widget-title {
+    font-size: 1.125rem;
+    line-height: 20px;
+}
+
+.footer .footer-widget .widget-content {
+    margin-top: 24px;
+}
+
+.footer .footer-widget .widget-content p {
+    margin-bottom: 8px;
+}
+
+.footer .footer-widget .widget-content .list-footer-menu .menu-item {
+    margin-bottom: 8px;
+}
+
+.footer .footer-widget .widget-content .list-footer-menu .menu-item a:hover {
+    color: var(--primary-color);
+}
+
+.footer .footer-widget .widget-content .list-social {
+    display: flex;
+    align-items: center;
+}
+
+.footer .footer-widget .widget-content .list-social li {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+}
+
+.footer .footer-widget .widget-content .list-social li:last-child {
+    margin-right: 0;
+}
+
+.footer .footer-widget .widget-content .list-social li:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    cursor: pointer;
+}
+
+.footer .footer-widget .widget-content .list-social li:hover a {
+    color: var(--color-white);
+}
+
+.footer .footer-bottom {
+    padding: 16px 0;
+}
+
+.footer .footer-bottom .copy-right {
+    color: var(--color-white);
+}
+/* End Footer */
+
+/* Slick Slider */
+.slick-prev {
+    left: -50px;
+}
+
+.slick-next {
+    right: -50px;
+}
+
+.slick-prev,
+.slick-next {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--color-white);
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.slick-prev::before,
+.slick-next::before {
+    opacity: 1;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: var(--fa-display,inline-block);
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+}
+
+.slick-prev::before {
+    content: "\f053";
+}
+
+.slick-next::before {
+    content: "\f054";
+}
+/* End Slick Slider */
