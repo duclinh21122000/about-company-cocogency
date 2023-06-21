@@ -143,25 +143,6 @@
 .about-us-home .content .description {
     margin-bottom: 16px;
 }
-
-.about-us-home .content .see-more {
-    color: var(--secondary-color);
-    font-size: 1.2em;
-}
-
-.about-us-home .content .see-more span {
-    position: relative;
-    right: 0;
-    transition: all .2s ease;
-}
-
-.about-us-home .content .see-more:hover {
-    color: var(--primary-color);
-}
-
-.about-us-home .content .see-more:hover span {
-    right: -5px;
-}
 /* END ABOUT US HOME */
 
 /* SLIDER SERVICE */
@@ -178,20 +159,20 @@
     transform: scale(1);
 }
 
-.service-area .item-service:hover .title {
+.item-service:hover .title {
     color: var(--primary-color);
 }
 
-.service-area .item-service .card {
+.item-service .card {
     text-align: center;
 }
 
-.service-area .item-service img {
+.item-service img {
     height: 200px;
     object-fit: contain;
 }
 
-.service-area .item-service .title {
+.item-service .title {
     font-size: 0.875em;
     margin-top: 8px;
 }
@@ -238,35 +219,181 @@
     color: var(--color-white);
 }
 
-.slider-blog .item-blog:hover img {
+.item-blog:hover img {
     transform: scale(1.1);
 }
 
-.slider-blog .item-blog:hover a {
+.item-blog:hover a {
     color: var(--secondary-color);
 }
 
-.slider-blog .item-blog .img-wrap {
+.item-blog .img-wrap {
     padding-top: 76.25%;
 }
 
-.slider-blog .item-blog img {
+.item-blog img {
     border-radius: 10px;
 }
 
-.slider-blog .item-blog .blog-content {
+.item-blog .blog-content {
     margin-top: 30px;
 }
 
-.slider-blog .item-blog .blog-content .title {
+.item-blog .blog-content .title {
     font-size: 1.2rem;
     line-height: 24px;
 }
 
-.slider-blog .item-blog .blog-content .description {
+.item-blog .blog-content .description {
     margin-top: 12px;
 }
 /* End Slider Blog */
+
+/* Page Header */
+.page-header {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.page-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.page-header .page-head-wrapper {
+    color: var(--color-white);
+    position: relative;
+    text-align: center;
+    z-index: 2;
+}
+
+.page-header .page-title .title {
+    font-size: 4rem;
+    line-height: 80px;
+}
+
+.page-header .breadcrumb {
+    font-size: 1.2rem;
+}
+
+.page-header .breadcrumb a:hover {
+    color: var(--secondary-color);
+}
+/* End Page Header */
+
+/* Page Service */
+.page-service-area .item-service {
+    margin-bottom: 32px;
+}
+
+.page-service-area .item-service:hover img {
+    transform: scale(1.1);
+}
+
+.page-service-area .item-service .card {
+    height: 100%;
+}
+
+.page-service-area .item-service .title {
+    font-size: 1em;
+}
+/* End Page Service */
+
+/* Page Blog */
+.blog-area .item-blog {
+    margin-bottom: 32px;
+}
+/* End Page Blog */
+
+/* Post content area */
+.post-content-area .post-widget {
+    position: sticky;
+    top: 10px;
+    left: 0;
+    width: 100%;
+}
+
+.post-content-area .post-widget .widget-title {
+    font-size: 1.5em;
+    color: var(--primary-color);
+    margin-bottom: 16px;
+}
+
+.post-content-area .post-widget .list-post .post-item {
+    padding: 12px 0;
+    border-bottom: 1px dashed #ccc;
+}
+
+.post-content-area .post-widget .list-post .post-item a {
+    font-size: 0.875em;
+    color: var(--color-blue-1);
+}
+
+.post-content-area .post-widget .list-post .post-item a:hover {
+    color: var(--secondary-color);
+}
+
+.post-entry-content {
+    margin-top: 32px;
+}
+/* End Post content area */
+
+/* Career Area  */
+.item-career {
+    margin-bottom: 32px;
+}
+
+.item-career .card {
+    padding: 0;
+    border-radius: 0;
+    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.07);
+    transition: all 0.2s ease-in;
+}
+
+.item-career .item-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item-career .box-thumbnail {
+    width: 33.33%;
+}
+
+.item-career .box-content {
+    width: 66.66%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.item-career .box-content .title {
+    font-size: 1em;
+    line-height: 20px;
+}
+
+.item-career .box-content .title:hover {
+    color: var(--primary-color);
+}
+
+.item-career .box-content .post-meta {
+    margin-top: 8px;
+}
+/* End Career Area */
 
 /* Footer */
 .footer .footer-widget .widget-title {
