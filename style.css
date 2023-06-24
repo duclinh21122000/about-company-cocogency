@@ -240,7 +240,7 @@
 }
 
 .item-blog .blog-content .title {
-    font-size: 1.2rem;
+    font-size: 1.2em;
     line-height: 24px;
 }
 
@@ -282,12 +282,12 @@
 }
 
 .page-header .page-title .title {
-    font-size: 4rem;
+    font-size: 4em;
     line-height: 80px;
 }
 
 .page-header .breadcrumb {
-    font-size: 1.2rem;
+    font-size: 1.2em;
 }
 
 .page-header .breadcrumb a:hover {
@@ -395,9 +395,61 @@
 }
 /* End Career Area */
 
+/* Career Detail */
+.post-content-career .post-content-title {
+    font-size: 1.25em;
+    border-bottom: 1px solid #B5B5B5;
+    padding-bottom: 8px;
+    margin-bottom: 24px;
+}
+
+.post-content-career .post-widget-career:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.post-content-career .post-widget-career .item-career {
+    margin-bottom: 0;
+    padding: 12px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.post-content-career .post-widget-career .item-career:last-child {
+    border-bottom: 0;
+}
+/* End Career Detail */
+
+/* Contact Area */
+.contact-area .contact-info {
+    margin-bottom: 64px;
+}
+
+.contact-area .contact-info .title {
+    margin-bottom: 12px;
+}
+
+.contact-area .contact-form .contact-form-inner {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.contact-area .contact-form .form-group {
+    margin-bottom: 24px;
+}
+
+.contact-area .contact-form .form-group input {
+    height: 45px;
+}
+/* End Contact Area */
+
+/* Map Area */
+.map-area iframe {
+    width: 100%;
+}
+/* End Map Area */
+
 /* Footer */
 .footer .footer-widget .widget-title {
-    font-size: 1.125rem;
+    font-size: 1.125em;
     line-height: 20px;
 }
 
