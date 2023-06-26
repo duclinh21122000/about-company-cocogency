@@ -82,7 +82,7 @@
                                 <img src="../assets/images/logo.png" alt="">
                             </a>
                         </div>
-                        <div class="menu">
+                        <div class="menu-nav">
                             <ul class="list-menu">
                                 <li class="menu-item">
                                     <a href="../index.html">Trang chủ</a>
@@ -104,12 +104,45 @@
                                 </li>
                             </ul>
                         </div>
+                        <button class="btn btn-outline btn-menu d-lg-none">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
     </header>
     <!-- End Header -->
+
+    <!-- Responsive Menu -->
+    <div class="responsive-menu menu-nav d-lg-none">
+        <div class="btn-close">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="menu-wrapper">
+            <ul class="list-menu">
+                <li class="menu-item">
+                    <a href="../index.html">Trang chủ</a>
+                </li>
+                <li class="menu-item">
+                    <a href="about.html">Về chúng tôi</a>
+                </li>
+                <li class="menu-item">
+                    <a href="service.html">Dịch vụ</a>
+                </li>
+                <li class="menu-item">
+                    <a href="blog.html">Tin tức</a>
+                </li>
+                <li class="menu-item">
+                    <a href="career.html">Tuyển dụng</a>
+                </li>
+                <li class="menu-item active">
+                    <a href="contact.html">Liên hệ</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- End Responsive Menu -->
 
     <!-- Page Header -->
     <section class="page-header" style="background-image: url(../assets//images//home-banner-1.webp);">
@@ -217,7 +250,10 @@
             <div class="row">
                 <div class="col-12">
                     <div class="map-inner">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.7525026642043!2d108.14537081154116!3d16.078328039128348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314218d3cfbf1ff9%3A0xfc59a1d21a8c36bd!2zMTc4IE5ndXnhu4VuIEzGsMahbmcgQuG6sW5nLCBIb8OgIEtow6FuaCBC4bqvYywgTGnDqm4gQ2hp4buDdSwgxJDDoCBO4bq1bmcgNTUwMDAwLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1687611226971!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.7525026642043!2d108.14537081154116!3d16.078328039128348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314218d3cfbf1ff9%3A0xfc59a1d21a8c36bd!2zMTc4IE5ndXnhu4VuIEzGsMahbmcgQuG6sW5nLCBIb8OgIEtow6FuaCBC4bqvYywgTGnDqm4gQ2hp4buDdSwgxJDDoCBO4bq1bmcgNTUwMDAwLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1687611226971!5m2!1svi!2s"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
@@ -311,6 +347,46 @@
         </div>
     </footer>
     <!-- End Footer -->
+
+    <!-- Contact -->
+    <div id="button-contact-vr">
+        <div id="zalo-vr" class="button-contact">
+            <div class="phone-vr">
+                <div class="phone-vr-circle-fill"></div>
+                <div class="phone-vr-img-circle">
+                    <a target="_blank" href="https://zalo.me/0946698008">
+                        <img src="../assets/images/ic-zalo.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Phone -->
+        <div id="phone-vr" class="button-contact">
+            <div class="phone-vr">
+                <div class="phone-vr-circle-fill"></div>
+                <div class="phone-vr-img-circle">
+                    <a href="tel:0946698008">
+                        <img src="../assets/images/ic-phone.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="phone-bar">
+            <a href="tel:0946698008">
+                <span class="text-phone">0946698008</span>
+            </a>
+        </div>
+        <!-- end phone -->
+    </div>
+    <!-- End Contact -->
+
+    <!-- Scroll To Top -->
+    <div id="scrollToTop" class="scrollToTop">
+        <button class="btn btn-outline btn-scrollToTop">
+            <i class="fa-solid fa-chevron-up"></i>
+        </button>
+    </div>
+    <!-- End Scroll To Top -->
 
     <!-- Overlay -->
     <div class="overlay"></div>
